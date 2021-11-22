@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB083B33274B613C00B38C61 /* TabBarViewSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB083B32274B613C00B38C61 /* TabBarViewSUI.swift */; };
+		AB083B35274B622900B38C61 /* CollectionViewSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB083B34274B622900B38C61 /* CollectionViewSUI.swift */; };
+		AB083B37274B623300B38C61 /* QGridViewSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB083B36274B623300B38C61 /* QGridViewSUI.swift */; };
+		AB083B39274B64CE00B38C61 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = AB083B38274B64CE00B38C61 /* Resources */; };
+		AB083B3D274B652800B38C61 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB083B3C274B652800B38C61 /* Storage.swift */; };
 		AB09D8E5274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D8E4274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift */; };
 		AB09D8E7274B5DC00070FF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D8E6274B5DC00070FF7E /* ContentView.swift */; };
 		AB09D8E9274B5DC10070FF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB09D8E8274B5DC10070FF7E /* Assets.xcassets */; };
@@ -16,6 +21,7 @@
 		AB09D8FB274B5DC10070FF7E /* SwiftUIGridLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D8FA274B5DC10070FF7E /* SwiftUIGridLayoutTests.swift */; };
 		AB09D905274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D904274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift */; };
 		AB09D907274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D906274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift */; };
+		AB09D915274B5F2C0070FF7E /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = AB09D914274B5F2C0070FF7E /* QGrid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB083B32274B613C00B38C61 /* TabBarViewSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewSUI.swift; sourceTree = "<group>"; };
+		AB083B34274B622900B38C61 /* CollectionViewSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSUI.swift; sourceTree = "<group>"; };
+		AB083B36274B623300B38C61 /* QGridViewSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGridViewSUI.swift; sourceTree = "<group>"; };
+		AB083B38274B64CE00B38C61 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		AB083B3C274B652800B38C61 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		AB09D8E1274B5DC00070FF7E /* SwiftUIGridLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGridLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB09D8E4274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridLayoutApp.swift; sourceTree = "<group>"; };
 		AB09D8E6274B5DC00070FF7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB09D915274B5F2C0070FF7E /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB083B3A274B64FA00B38C61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB083B34274B622900B38C61 /* CollectionViewSUI.swift */,
+				AB083B36274B623300B38C61 /* QGridViewSUI.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB083B3B274B650D00B38C61 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AB083B3C274B652800B38C61 /* Storage.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		AB09D8D8274B5DC00070FF7E = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +129,13 @@
 			children = (
 				AB09D8E4274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift */,
 				AB09D8E6274B5DC00070FF7E /* ContentView.swift */,
+				AB083B32274B613C00B38C61 /* TabBarViewSUI.swift */,
+				AB083B3B274B650D00B38C61 /* Helper */,
+				AB083B3A274B64FA00B38C61 /* Views */,
 				AB09D8E8274B5DC10070FF7E /* Assets.xcassets */,
 				AB09D8ED274B5DC10070FF7E /* Persistence.swift */,
 				AB09D8EF274B5DC10070FF7E /* SwiftUIGridLayout.xcdatamodeld */,
+				AB083B38274B64CE00B38C61 /* Resources */,
 				AB09D8EA274B5DC10070FF7E /* Preview Content */,
 			);
 			path = SwiftUIGridLayout;
@@ -149,6 +182,9 @@
 			dependencies = (
 			);
 			name = SwiftUIGridLayout;
+			packageProductDependencies = (
+				AB09D914274B5F2C0070FF7E /* QGrid */,
+			);
 			productName = SwiftUIGridLayout;
 			productReference = AB09D8E1274B5DC00070FF7E /* SwiftUIGridLayout.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +257,9 @@
 				Base,
 			);
 			mainGroup = AB09D8D8274B5DC00070FF7E;
+			packageReferences = (
+				AB09D913274B5F2C0070FF7E /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = AB09D8E2274B5DC00070FF7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,6 +278,7 @@
 			files = (
 				AB09D8EC274B5DC10070FF7E /* Preview Assets.xcassets in Resources */,
 				AB09D8E9274B5DC10070FF7E /* Assets.xcassets in Resources */,
+				AB083B39274B64CE00B38C61 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB083B35274B622900B38C61 /* CollectionViewSUI.swift in Sources */,
+				AB083B33274B613C00B38C61 /* TabBarViewSUI.swift in Sources */,
 				AB09D8EE274B5DC10070FF7E /* Persistence.swift in Sources */,
 				AB09D8F1274B5DC10070FF7E /* SwiftUIGridLayout.xcdatamodeld in Sources */,
 				AB09D8E7274B5DC00070FF7E /* ContentView.swift in Sources */,
+				AB083B3D274B652800B38C61 /* Storage.swift in Sources */,
+				AB083B37274B623300B38C61 /* QGridViewSUI.swift in Sources */,
 				AB09D8E5274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +659,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB09D913274B5F2C0070FF7E /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB09D914274B5F2C0070FF7E /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB09D913274B5F2C0070FF7E /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AB09D8EF274B5DC10070FF7E /* SwiftUIGridLayout.xcdatamodeld */ = {
