@@ -11,6 +11,7 @@
 		AB083B35274B622900B38C61 /* CollectionViewSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB083B34274B622900B38C61 /* CollectionViewSUI.swift */; };
 		AB083B37274B623300B38C61 /* QGridViewSUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB083B36274B623300B38C61 /* QGridViewSUI.swift */; };
 		AB083B3D274B652800B38C61 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB083B3C274B652800B38C61 /* Storage.swift */; };
+		AB083B40274D47A800B38C61 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = AB083B3F274D47A800B38C61 /* QGrid */; };
 		AB09D8E5274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D8E4274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift */; };
 		AB09D8E7274B5DC00070FF7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D8E6274B5DC00070FF7E /* ContentView.swift */; };
 		AB09D8E9274B5DC10070FF7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB09D8E8274B5DC10070FF7E /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		AB09D8FB274B5DC10070FF7E /* SwiftUIGridLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D8FA274B5DC10070FF7E /* SwiftUIGridLayoutTests.swift */; };
 		AB09D905274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D904274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift */; };
 		AB09D907274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D906274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift */; };
+		AB473C68274D497500DB2317 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = AB473C66274D494E00DB2317 /* people.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,6 @@
 		AB083B32274B613C00B38C61 /* TabBarViewSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewSUI.swift; sourceTree = "<group>"; };
 		AB083B34274B622900B38C61 /* CollectionViewSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSUI.swift; sourceTree = "<group>"; };
 		AB083B36274B623300B38C61 /* QGridViewSUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QGridViewSUI.swift; sourceTree = "<group>"; };
-		AB083B38274B64CE00B38C61 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		AB083B3C274B652800B38C61 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		AB09D8E1274B5DC00070FF7E /* SwiftUIGridLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGridLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB09D8E4274B5DC00070FF7E /* SwiftUIGridLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridLayoutApp.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		AB09D900274B5DC10070FF7E /* SwiftUIGridLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIGridLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB09D904274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridLayoutUITests.swift; sourceTree = "<group>"; };
 		AB09D906274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB473C66274D494E00DB2317 /* people.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB083B40274D47A800B38C61 /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +104,13 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		AB083B3E274D47A800B38C61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB09D8D8274B5DC00070FF7E = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 				AB09D8F9274B5DC10070FF7E /* SwiftUIGridLayoutTests */,
 				AB09D903274B5DC10070FF7E /* SwiftUIGridLayoutUITests */,
 				AB09D8E2274B5DC00070FF7E /* Products */,
+				AB083B3E274D47A800B38C61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,10 +140,10 @@
 				AB083B32274B613C00B38C61 /* TabBarViewSUI.swift */,
 				AB083B3B274B650D00B38C61 /* Helper */,
 				AB083B3A274B64FA00B38C61 /* Views */,
+				AB473C67274D496200DB2317 /* Resources */,
 				AB09D8E8274B5DC10070FF7E /* Assets.xcassets */,
 				AB09D8ED274B5DC10070FF7E /* Persistence.swift */,
 				AB09D8EF274B5DC10070FF7E /* SwiftUIGridLayout.xcdatamodeld */,
-				AB083B38274B64CE00B38C61 /* Resources */,
 				AB09D8EA274B5DC10070FF7E /* Preview Content */,
 			);
 			path = SwiftUIGridLayout;
@@ -163,6 +174,14 @@
 			path = SwiftUIGridLayoutUITests;
 			sourceTree = "<group>";
 		};
+		AB473C67274D496200DB2317 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB473C66274D494E00DB2317 /* people.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +199,7 @@
 			);
 			name = SwiftUIGridLayout;
 			packageProductDependencies = (
+				AB083B3F274D47A800B38C61 /* QGrid */,
 			);
 			productName = SwiftUIGridLayout;
 			productReference = AB09D8E1274B5DC00070FF7E /* SwiftUIGridLayout.app */;
@@ -272,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB473C68274D497500DB2317 /* people.json in Resources */,
 				AB09D8EC274B5DC10070FF7E /* Preview Assets.xcassets in Resources */,
 				AB09D8E9274B5DC10070FF7E /* Assets.xcassets in Resources */,
 			);
@@ -665,6 +686,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB083B3F274D47A800B38C61 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB09D913274B5F2C0070FF7E /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		AB09D8EF274B5DC10070FF7E /* SwiftUIGridLayout.xcdatamodeld */ = {
