@@ -22,6 +22,7 @@
 		AB09D905274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D904274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift */; };
 		AB09D907274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB09D906274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift */; };
 		AB473C68274D497500DB2317 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = AB473C66274D494E00DB2317 /* people.json */; };
+		AB473C6A2750A2F800DB2317 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB473C692750A2F800DB2317 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		AB09D904274B5DC10070FF7E /* SwiftUIGridLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridLayoutUITests.swift; sourceTree = "<group>"; };
 		AB09D906274B5DC10070FF7E /* SwiftUIGridLayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIGridLayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB473C66274D494E00DB2317 /* people.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		AB473C692750A2F800DB2317 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				AB083B34274B622900B38C61 /* CollectionViewSUI.swift */,
 				AB083B36274B623300B38C61 /* QGridViewSUI.swift */,
+				AB473C692750A2F800DB2317 /* DetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				AB083B35274B622900B38C61 /* CollectionViewSUI.swift in Sources */,
 				AB083B33274B613C00B38C61 /* TabBarViewSUI.swift in Sources */,
+				AB473C6A2750A2F800DB2317 /* DetailsView.swift in Sources */,
 				AB09D8EE274B5DC10070FF7E /* Persistence.swift in Sources */,
 				AB09D8F1274B5DC10070FF7E /* SwiftUIGridLayout.xcdatamodeld in Sources */,
 				AB09D8E7274B5DC00070FF7E /* ContentView.swift in Sources */,

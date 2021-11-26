@@ -8,8 +8,35 @@
 import SwiftUI
 
 struct CollectionViewSUI: View {
+    let peoples = Storage.people
+    private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            GeometryReader { geometry in
+                ScrollView {
+                    LazyVGrid(columns: threeColumnGrid) {
+                        ForEach(peoples) { people in
+                            NavigationLink(destination: DetailsView()) {
+                                VStack {
+                                    Image(people.imageName, bundle: .main)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .shadow(color: .primary, radius: 5)
+                                        .frame(width: geometry.size.width * 0.3, height: geometry.size.width * 0.3, alignment: .center)
+                                        .clipShape(Circle())
+                                    Text(people.firstName)
+                                        .foregroundColor(.primary)
+                                    Text(people.lastName)
+                                        .foregroundColor(.primary)
+                                }
+                            }
+                        }
+                    }
+                }.padding()
+                    .navigationTitle("Customize Grid View")
+            }
+        }
     }
 }
 
