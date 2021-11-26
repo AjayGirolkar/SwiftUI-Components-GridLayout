@@ -12,6 +12,7 @@ struct Person : Codable, Identifiable {
   var firstName: String
   var lastName: String
   var imageName: String
+  var description: String
 }
 
 struct Storage {

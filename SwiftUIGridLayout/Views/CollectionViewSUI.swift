@@ -14,17 +14,17 @@ struct CollectionViewSUI: View {
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
-                ScrollView {
+                ScrollView(.vertical, showsIndicators: false, content: {
                     LazyVGrid(columns: threeColumnGrid) {
                         ForEach(peoples) { people in
-                            NavigationLink(destination: DetailsView()) {
+                            NavigationLink(destination: DetailsView(person: people)) {
                                 VStack {
                                     Image(people.imageName, bundle: .main)
                                         .resizable()
                                         .scaledToFit()
-                                        .shadow(color: .primary, radius: 5)
-                                        .frame(width: geometry.size.width * 0.3, height: geometry.size.width * 0.3, alignment: .center)
+                                        .frame(width: geometry.size.width * 0.2, height: geometry.size.width * 0.2, alignment: .center)
                                         .clipShape(Circle())
+                                        .shadow(color: .primary, radius: 5)
                                     Text(people.firstName)
                                         .foregroundColor(.primary)
                                     Text(people.lastName)
@@ -32,9 +32,8 @@ struct CollectionViewSUI: View {
                                 }
                             }
                         }
-                    }
-                }.padding()
-                    .navigationTitle("Customize Grid View")
+                    }.padding()
+                }).navigationTitle("Customize Grid View")
             }
         }
     }
